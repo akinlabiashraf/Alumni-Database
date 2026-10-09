@@ -1,0 +1,297 @@
+/**
+ * Summit University Alumni Platform — Brand & Design System
+ * Official University Colors:
+ *   - Forest Green: #006837
+ *   - Deep Forest:  #004d28
+ *   - Emerald:      #26ae61
+ *   - Summit Gold:  #D4AF37
+ *   - Gold Dark:    #b89628
+ */
+
+:root {
+    --summit-green: #006837;
+    --summit-green-dark: #004d28;
+    --summit-green-accent: #26ae61;
+    --summit-green-light: #e8f5ed;
+    --summit-green-subtle: #f0fdf4;
+    --summit-gold: #D4AF37;
+    --summit-gold-dark: #b89628;
+    --summit-gold-light: #fef9c3;
+    --summit-navy: #1e3a5f;
+    --summit-dark: #111827;
+    --summit-text: #374151;
+    --summit-muted: #6b7280;
+    --summit-border: #e5e7eb;
+    --summit-white: #ffffff;
+    --summit-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --summit-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --summit-shadow-lg: 0 10px 15px -3px rgba(0, 104, 55, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --summit-radius: 8px;
+    --summit-radius-lg: 12px;
+}
+
+/* Base University Elements */
+body {
+    color: var(--summit-text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--summit-green-dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Brand Navbar */
+.navbar-default.bootsnav {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--summit-green);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px !important;
+    height: auto !important;
+}
+
+.summit-navbar-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.summit-navbar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.summit-navbar-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--summit-green-dark);
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+}
+
+.summit-navbar-subtitle {
+    font-size: 10px;
+    color: var(--summit-gold-dark);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Nav links styling */
+nav.navbar.bootsnav ul.nav > li > a {
+    color: var(--summit-dark) !important;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 30px 15px;
+    transition: color 0.2s ease;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li.active > a {
+    color: var(--summit-green) !important;
+}
+
+/* Brand Buttons */
+.btn-summit-primary {
+    background: linear-gradient(135deg, var(--summit-green) 0%, var(--summit-green-dark) 100%);
+    color: #ffffff !important;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: var(--summit-radius);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0, 104, 55, 0.25);
+}
+
+.btn-summit-primary:hover {
+    background: linear-gradient(135deg, var(--summit-green-dark) 0%, #00361c 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 104, 55, 0.35);
+}
+
+.btn-summit-gold {
+    background: linear-gradient(135deg, var(--summit-gold) 0%, var(--summit-gold-dark) 100%);
+    color: #ffffff !important;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: var(--summit-radius);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.25);
+}
+
+.btn-summit-gold:hover {
+    background: linear-gradient(135deg, var(--summit-gold-dark) 0%, #9c7f1a 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(212, 175, 55, 0.35);
+}
+
+.btn-summit-outline {
+    background: transparent;
+    color: var(--summit-green) !important;
+    border: 2px solid var(--summit-green);
+    padding: 8px 22px;
+    font-weight: 600;
+    border-radius: var(--summit-radius);
+    transition: all 0.2s ease;
+}
+
+.btn-summit-outline:hover {
+    background: var(--summit-green-light);
+    color: var(--summit-green-dark) !important;
+}
+
+/* Verified Badge */
+.summit-badge-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--summit-green-light);
+    color: var(--summit-green-dark);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 104, 55, 0.2);
+}
+
+.summit-badge-verified i {
+    color: var(--summit-green);
+}
+
+.summit-badge-gold {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--summit-gold-light);
+    color: var(--summit-gold-dark);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* NDPA 2023 Compliance Pill */
+.summit-ndpa-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Footer Styling */
+.summit-footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 60px 0 20px;
+    border-top: 4px solid var(--summit-gold);
+}
+
+.summit-footer h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.summit-footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    background: var(--summit-green-accent);
+    border-radius: 2px;
+}
+
+.summit-footer a {
+    color: #cbd5e1;
+    transition: color 0.2s ease;
+}
+
+.summit-footer a:hover {
+    color: var(--summit-gold);
+}
+
+.summit-footer-bottom {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #1e293b;
+    font-size: 12px;
+}
+
+/* Toast Notifications */
+.summit-toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summit-toast {
+    min-width: 300px;
+    max-width: 420px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideInRight 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.summit-toast-success {
+    background: #ecfdf5;
+    color: #065f46;
+    border-left: 4px solid #10b981;
+}
+
+.summit-toast-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border-left: 4px solid #ef4444;
+}
+
+.summit-toast-info {
+    background: #f0fdf4;
+    color: #166534;
+    border-left: 4px solid var(--summit-green);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
