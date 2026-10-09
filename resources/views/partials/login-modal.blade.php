@@ -26,7 +26,7 @@
             <label style="font-weight: 600; font-size: 13px; color: var(--summit-dark);">Email Address or Matric Number</label>
             <div class="input-group">
               <span class="input-group-addon" style="background: #f8fafc;"><i class="fa fa-user" style="color: var(--summit-green);"></i></span>
-              <input type="text" id="modalLoginInput" class="form-control" placeholder="e.g. SU/20/NAS/014 or amina@example.com" required style="height: 45px; border-radius: 0 6px 6px 0;">
+              <input type="text" id="modalLoginInput" class="form-control" placeholder="e.g. 22/CONAS/CSC/025 or amina@example.com" required style="height: 45px; border-radius: 0 6px 6px 0;">
             </div>
             <small class="text-muted" style="font-size: 11px;">You can login using either your registered email or official matric number.</small>
           </div>

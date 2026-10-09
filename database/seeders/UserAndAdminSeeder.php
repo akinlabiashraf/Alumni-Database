@@ -152,5 +152,107 @@ class UserAndAdminSeeder extends Seeder
             'ip_address' => '127.0.0.1',
             'created_at' => now(),
         ]);
+
+        // 4. HABEEBULLAH Ashrof Akintola (22/CONAS/CSC/025)
+        $habeebullahRecord = GraduateRecord::where('matric_number', '22/CONAS/CSC/025')->first();
+
+        $userHabeebullah = User::firstOrCreate(
+            ['email' => 'ashrafhabeeb204@gmail.com'],
+            [
+                'name' => 'HABEEBULLAH Ashrof Akintola',
+                'matric_number' => '22/CONAS/CSC/025',
+                'phone' => '08027352041',
+                'password' => Hash::make('password'),
+                'role' => 'alumnus',
+                'status' => 'active',
+                'graduate_record_id' => $habeebullahRecord?->id,
+                'ndpa_consent' => true,
+                'ndpa_consent_at' => now(),
+                'email_verified_at' => now(),
+            ]
+        );
+
+        if ($habeebullahRecord) {
+            $habeebullahRecord->update([
+                'status' => 'claimed',
+                'claimed_by_user_id' => $userHabeebullah->id,
+                'claimed_at' => now(),
+            ]);
+        }
+
+        Profile::firstOrCreate(
+            ['user_id' => $userHabeebullah->id],
+            [
+                'headline' => 'Class of 2026 | Computer Science, Summit University Offa',
+                'bio' => 'Computer Science graduate, Class of 2026. Passionate software engineer and tech innovator.',
+                'city' => 'Offa',
+                'state' => 'Kwara',
+                'country' => 'Nigeria',
+                'skills' => ['Computer Science', 'Software Engineering', 'Web Development'],
+            ]
+        );
+
+        PrivacySetting::firstOrCreate(
+            ['user_id' => $userHabeebullah->id],
+            [
+                'profile_visibility' => 'public',
+                'email_visibility' => 'alumni_only',
+                'phone_visibility' => 'private',
+                'work_visibility' => 'public',
+                'location_visibility' => 'alumni_only',
+                'allow_messaging' => true,
+            ]
+        );
+
+        // 5. ADEBAYO Shamsudeen Anuoluwapo (22/CONAS/CSC/026)
+        $adebayoRecord = GraduateRecord::where('matric_number', '22/CONAS/CSC/026')->first();
+
+        $userAdebayo = User::firstOrCreate(
+            ['email' => 'adebayoshamo.st@summituniversity.edu.ng'],
+            [
+                'name' => 'ADEBAYO Shamsudeen Anuoluwapo',
+                'matric_number' => '22/CONAS/CSC/026',
+                'phone' => '08104795758',
+                'password' => Hash::make('password'),
+                'role' => 'alumnus',
+                'status' => 'active',
+                'graduate_record_id' => $adebayoRecord?->id,
+                'ndpa_consent' => true,
+                'ndpa_consent_at' => now(),
+                'email_verified_at' => now(),
+            ]
+        );
+
+        if ($adebayoRecord) {
+            $adebayoRecord->update([
+                'status' => 'claimed',
+                'claimed_by_user_id' => $userAdebayo->id,
+                'claimed_at' => now(),
+            ]);
+        }
+
+        Profile::firstOrCreate(
+            ['user_id' => $userAdebayo->id],
+            [
+                'headline' => 'Class of 2026 | Computer Science, Summit University Offa',
+                'bio' => 'Computer Science graduate, Class of 2026 at Summit University Offa.',
+                'city' => 'Offa',
+                'state' => 'Kwara',
+                'country' => 'Nigeria',
+                'skills' => ['Computer Science', 'Information Technology', 'Software Development'],
+            ]
+        );
+
+        PrivacySetting::firstOrCreate(
+            ['user_id' => $userAdebayo->id],
+            [
+                'profile_visibility' => 'public',
+                'email_visibility' => 'alumni_only',
+                'phone_visibility' => 'private',
+                'work_visibility' => 'public',
+                'location_visibility' => 'alumni_only',
+                'allow_messaging' => true,
+            ]
+        );
     }
 }

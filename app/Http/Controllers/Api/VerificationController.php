@@ -61,7 +61,7 @@ class VerificationController extends Controller
                 'success' => false,
                 'status' => 'not_found',
                 'message' => "Matriculation number '{$normalizedMatric}' was not found in the Summit University graduate registry.",
-                'hint' => 'Please check for typos (e.g. SU/20/NAS/014). If your record is missing, you may request manual verification.',
+                'hint' => 'Please check for typos (e.g. 22/CONAS/CSC/025). If your record is missing, you may request manual verification.',
                 'can_request_manual' => true,
             ], 404);
         }

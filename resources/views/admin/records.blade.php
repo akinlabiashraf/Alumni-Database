@@ -211,7 +211,7 @@
             <div class="col-md-4">
               <div class="form-group">
                 <label style="font-size: 12px; font-weight: 600;">Matriculation No. *</label>
-                <input type="text" id="formMatric" class="form-control" placeholder="SU/24/NAS/001" required>
+                <input type="text" id="formMatric" class="form-control" placeholder="22/CONAS/CSC/025" required>
               </div>
             </div>
             <div class="col-md-4">

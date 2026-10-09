@@ -50,8 +50,8 @@
             </div>
             <div>
               <h5 style="margin: 0 0 3px; font-weight: 700; color: var(--summit-dark); font-size: 14px;">Phone & WhatsApp</h5>
-              <span style="color: var(--summit-text); font-size: 13px;">+234 (0) 814 976 1311</span><br>
-              <span style="color: var(--summit-muted); font-size: 12px;">+234 (0) 803 123 4567</span>
+              <span style="color: var(--summit-text); font-size: 13px;">0802 735 2041</span><br>
+              <span style="color: var(--summit-muted); font-size: 12px;">0810 479 5758</span>
             </div>
           </div>
 

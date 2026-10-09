@@ -62,10 +62,10 @@
                     <span class="input-group-addon" style="background: #f8fafc; font-size: 16px; color: var(--summit-green);">
                       <i class="fa fa-id-card-o"></i>
                     </span>
-                    <input type="text" id="verifyMatricInput" class="form-control" placeholder="e.g. SU/20/NAS/014" required style="height: 48px; font-size: 15px; text-transform: uppercase;">
+                    <input type="text" id="verifyMatricInput" class="form-control" placeholder="e.g. 22/CONAS/CSC/025" required style="height: 48px; font-size: 15px; text-transform: uppercase;">
                   </div>
                   <small class="text-muted" style="font-size: 12px; margin-top: 4px; display: block;">
-                    Example formats: <code>SU/19/NAS/001</code>, <code>SU/20/NAS/014</code>, <code>SU/21/MSS/032</code>
+                    Example format: <code>22/CONAS/CSC/025</code>
                   </small>
                 </div>
 
@@ -133,7 +133,7 @@
                     </h4>
                   </div>
                   <div style="text-align: right;">
-                    <span id="previewMatric" class="badge" style="background: var(--summit-green); font-size: 13px; padding: 6px 12px;">SU/20/NAS/014</span>
+                    <span id="previewMatric" class="badge" style="background: var(--summit-green); font-size: 13px; padding: 6px 12px;">22/CONAS/CSC/025</span>
                   </div>
                 </div>
 
@@ -245,7 +245,7 @@
 
                 <div class="col-md-6 col-sm-12 form-group">
                   <label style="font-size: 13px; font-weight: 600; color: var(--summit-dark);">Matriculation Number *</label>
-                  <input type="text" id="manualMatric" class="form-control" placeholder="e.g. SU/18/NAS/020" required style="height: 45px; text-transform: uppercase;">
+                  <input type="text" id="manualMatric" class="form-control" placeholder="e.g. 22/CONAS/CSC/025" required style="height: 45px; text-transform: uppercase;">
                 </div>
               </div>
 

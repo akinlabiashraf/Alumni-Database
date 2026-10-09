@@ -46,7 +46,7 @@
                 <span class="input-group-addon" style="background: #f8fafc; color: var(--summit-green);">
                   <i class="fa fa-envelope"></i>
                 </span>
-                <input type="text" id="recoveryInput" class="form-control" placeholder="e.g. amina@example.com or SU/20/NAS/014" required style="height: 48px; font-size: 14px;">
+                <input type="text" id="recoveryInput" class="form-control" placeholder="e.g. amina@example.com or 22/CONAS/CSC/025" required style="height: 48px; font-size: 14px;">
               </div>
             </div>
 

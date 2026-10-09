@@ -58,7 +58,7 @@
           </p>
           <p style="margin-bottom: 8px;">
             <i class="fa fa-phone" style="color: var(--summit-gold); margin-right: 8px;"></i>
-            +234 (0) 814 976 1311
+            0802 735 2041, 0810 479 5758
           </p>
           <p style="margin-bottom: 0;">
             <i class="fa fa-globe" style="color: var(--summit-gold); margin-right: 8px;"></i>

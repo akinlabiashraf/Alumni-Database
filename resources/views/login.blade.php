@@ -42,7 +42,7 @@
                 <span class="input-group-addon" style="background: #f8fafc; color: var(--summit-green);">
                   <i class="fa fa-user"></i>
                 </span>
-                <input type="text" id="pageLoginInput" class="form-control" placeholder="e.g. SU/20/NAS/014 or amina@example.com" required style="height: 48px; font-size: 14px;">
+                <input type="text" id="pageLoginInput" class="form-control" placeholder="e.g. 22/CONAS/CSC/025 or amina@example.com" required style="height: 48px; font-size: 14px;">
               </div>
             </div>
 

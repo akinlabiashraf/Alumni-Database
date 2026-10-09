@@ -186,6 +186,29 @@ class GraduateRecordSeeder extends Seeder
                 'class_of_degree' => 'First Class Honours',
                 'graduation_year' => 2025,
             ],
+            // 2026 Set
+            [
+                'matric_number' => '22/CONAS/CSC/025',
+                'first_name' => 'Habeebullah',
+                'middle_name' => 'Ashrof',
+                'last_name' => 'Akintola',
+                'faculty_id' => $fnas?->id,
+                'department_id' => $csc?->id,
+                'degree' => 'B.Sc. Computer Science',
+                'class_of_degree' => 'First Class Honours',
+                'graduation_year' => 2026,
+            ],
+            [
+                'matric_number' => '22/CONAS/CSC/026',
+                'first_name' => 'Adebayo',
+                'middle_name' => 'Shamsudeen',
+                'last_name' => 'Anuoluwapo',
+                'faculty_id' => $fnas?->id,
+                'department_id' => $csc?->id,
+                'degree' => 'B.Sc. Computer Science',
+                'class_of_degree' => 'Second Class Honours (Upper Division)',
+                'graduation_year' => 2026,
+            ],
         ];
 
         foreach ($graduates as $grad) {

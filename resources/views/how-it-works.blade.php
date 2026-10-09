@@ -35,7 +35,7 @@
           </div>
           <h4 style="font-size: 17px; font-weight: 700; color: var(--summit-dark); margin-bottom: 10px;">Enter Matric No.</h4>
           <p style="font-size: 13px; color: var(--summit-muted); line-height: 22px; margin: 0;">
-            Provide your official matriculation number (e.g. <code>SU/20/NAS/014</code>) to check the university graduate database.
+            Provide your official matriculation number (e.g. <code>22/CONAS/CSC/025</code>) to check the university graduate database.
           </p>
         </div>
       </div>

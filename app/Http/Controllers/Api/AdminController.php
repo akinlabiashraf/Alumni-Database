@@ -546,7 +546,7 @@ class AdminController extends Controller
             ]);
 
             fputcsv($handle, [
-                'SU/24/NAS/001',
+                '22/CONAS/CSC/025',
                 'Adebayo',
                 'Kabir',
                 'Lawal',
@@ -554,7 +554,7 @@ class AdminController extends Controller
                 'CSC',
                 'B.Sc. Computer Science',
                 'First Class Honours',
-                '2024',
+                '2026',
             ]);
 
             fputcsv($handle, [

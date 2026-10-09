@@ -47,9 +47,9 @@
               <label style="font-size: 13px; font-weight: 600; color: var(--summit-dark);">Matriculation Number</label>
               <div class="input-group">
                 <span class="input-group-addon" style="background: #f8fafc; border-right: none;"><i class="fa fa-id-card-o" style="color: var(--summit-green);"></i></span>
-                <input type="text" id="heroMatricInput" class="form-control" placeholder="e.g. SU/20/NAS/014" required style="height: 48px; font-size: 14px; text-transform: uppercase;">
+                <input type="text" id="heroMatricInput" class="form-control" placeholder="e.g. 22/CONAS/CSC/025" required style="height: 48px; font-size: 14px; text-transform: uppercase;">
               </div>
-              <small class="text-muted" style="font-size: 11px; display: block; margin-top: 5px;">Works for all degrees (FNAS, FMSS, FHUM, FEES).</small>
+              <small class="text-muted" style="font-size: 11px; display: block; margin-top: 5px;">Works for all degrees (CONAS/FNAS, FMSS, FHUM, FEES).</small>
             </div>
 
             <div id="heroVerifyAlert" style="display: none; font-size: 13px; padding: 12px; border-radius: 6px; margin-bottom: 15px;"></div>

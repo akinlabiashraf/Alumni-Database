@@ -93,6 +93,8 @@ Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
 | Role | Email / Matriculation No. | Password | Description |
 | :--- | :--- | :--- | :--- |
+| **Alumnus (Class of 2026)** | `ashrafhabeeb204@gmail.com`<br>`22/CONAS/CSC/025` | `password` | HABEEBULLAH Ashrof Akintola (B.Sc. Computer Science, Class of 2026). |
+| **Alumnus (Class of 2026)** | `adebayoshamo.st@summituniversity.edu.ng`<br>`22/CONAS/CSC/026` | `password` | ADEBAYO Shamsudeen Anuoluwapo (B.Sc. Computer Science, Class of 2026). |
 | **Pioneer Alumna** | `amina.bello@summituniversity.edu.ng`<br>`SU/19/NAS/001` | `password` | Verified alumna with complete profile, skills, and NDPA settings. |
 | **Super Admin** | `admin@summituniversity.edu.ng` | `password` | Full administrative control center access (`/admin/dashboard`). |
 | **Moderator** | `moderator@summituniversity.edu.ng` | `password` | Verification queue moderator (`/admin/verifications`). |
